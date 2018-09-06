@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+</head>
+<style>
+    .gu{
+        /*display: none;*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .gu .gu-td{
+        width: 400px;
+        height: 250px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto ;
+        overflow: hidden;
+    }
+    .gu .gu-td .imgs{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        position:absolute;
+        top:0;
+        left: 0;
+    }
+    .gu .gu-td:hover .left{
+        display: inline;
+    }
+    .gu .gu-td:hover .right{
+        display: inline;
+    }
+    .gu .gu-td img{
+        height: 100%;
+    }
+    .gu .gu-td .gu-dd{
+        width: 100%;
+        padding: 50px 30px;
+    }
+    .gu .gu-td .gu-dd h4{
+        font-size: 20px;
+        color: #333;
+        margin:10px 0;
+    }
+    .gu .gu-td .gu-dd h6{
+        font-size: 14px;
+        color: #bababa;
+        margin:0;
+    }
+    .gu .gu-td .gu-dd p{
+        font-size: 14px;
+        color: #333;
+    }
+    .gu .dian{
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .gu .dian .dian-td{
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+        background: #bababa;
+    }
+    .gu .gu-td .guan{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        color: #333;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .banner{
+        width: 400px;
+        height: 250px;
+    }
+</style>
+<body>
+    <div class="gu">
+    <div class="gu-td">
+        <div class="swiper-container banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="imgs">
+                        <img src="img/coach.jpg" alt="">
+                        <div class="gu-dd">
+                            <h4>Kevin Kate</h4>
+                            <h6>健身教练</h6>
+                            <p>担任中心健身教练，教练经验丰富</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgs">
+                        <img src="img/coach1.jpg" alt="">
+                        <div class="gu-dd">
+                            <h4>Kevin Kate</h4>
+                            <h6>健身教练</h6>
+                            <p>担任中心健身教练，教练经验丰富</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgs">
+                        <img src="img/coach2.jpg" alt="">
+                        <div class="gu-dd">
+                            <h4>Kevin Kate</h4>
+                            <h6>健身教练</h6>
+                            <p>担任中心健身教练，教练经验丰富</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgs">
+                        <img src="img/coach3.jpg" alt="">
+                        <div class="gu-dd">
+                            <h4>Kevin Kate</h4>
+                            <h6>健身教练</h6>
+                            <p>担任中心健身教练，教练经验丰富</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgs">
+                        <img src="img/coach4.jpg" alt="">
+                        <div class="gu-dd">
+                            <h4>Kevin Kate</h4>
+                            <h6>健身教练</h6>
+                            <p>担任中心健身教练，教练经验丰富</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="guan">
+            ×
+        </div>
+    </div>
+</div>
+    <script src="js/swiper-4.3.5.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            effect : 'cube',
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+        })
+    </script>
+
+</body>
+</html>
+<script>
+    let guan=document.querySelector(".guan");
+    let gu=document.querySelector(".gu");
+    guan.onclick=function () {
+        guan.style.display="none";
+    }
+</script>

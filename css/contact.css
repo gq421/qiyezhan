@@ -1,0 +1,266 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+html ,body{
+	height: 100%;
+	width: 100%;
+	display: block;
+	background-position: center top;
+	background-repeat:repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.paje{
+	background-image: url('../img/page2-10.jpg');
+	background-position: center top;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+.container{
+	padding: 0;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	background-color: #fff;
+	padding-top: 30px;
+		}
+header{
+	overflow: hidden;
+	height: 0;
+}
+nav{
+	width: 100%;
+	height: 48px;
+	background-color: #000;
+	display: flex;
+	flex-direction: row;
+}
+nav ul{
+	width: 100%;
+}
+nav ul li{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 48px;
+}
+nav ul li a{
+	height: 100%;
+	width: 128px;
+	font-size: 14px;
+	color: rgba(141, 144, 149, 1.0);
+	text-decoration: none;
+	line-height: 48px;
+	text-align: center;
+	display: none;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+nav  a.list{
+	width: 100px;
+	color: #fff;
+}
+nav ul li img{
+	width: 100px;
+	height: 17px;
+	margin-top: 15px;
+}
+nav ul li a.val{
+	font-size: 24px;
+	display: inline;
+}
+footer{
+	width: 100%;
+	height: 100%;
+	padding-bottom:40px ;
+}
+footer .con{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 20px;
+}
+footer .last input{
+	width: 90%;
+	height: 45px;
+	border: 0;
+	border-bottom: 1px solid #bababa;
+	font-size: 16px;
+	color: #bababa;
+	line-height: 45px;
+	outline: none;
+}
+footer .last textarea{
+	width: 90%;
+	height: 60px;
+	border: 0;
+	border-bottom: 1px solid #bababa;
+	font-size: 16px;
+	color: #bababa;
+	line-height: 45px;
+	outline: none;
+}
+footer .last button{
+	width: 100px;
+	height: 40px;
+	background-color: #333;
+	color: #fff;
+	margin-top: 20px;
+	border: 0;
+}
+footer .contact{
+	width: 100%;
+	height: 100%;
+}
+footer .contact li{
+	height: 25px;
+	font-size: 16px;
+	color: #bababa;
+}
+footer .contact li.log{
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 30px;
+}
+footer .contact .log a{
+	font-size: 25px;
+	color: #bababa;
+}
+footer .contact .log a:hover{
+	text-decoration: none;
+}
+footer .contact li:nth-child(1){
+	color: #333;
+}
+footer .tu{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+footer .tu img{
+	width: 1010px;
+	height: 100%;
+}
+@media screen and (min-width: 992px){
+		header{
+			width: 100%;
+			height: 90px;
+			padding: 0 40px;
+			z-index: 10;
+		}
+		header .table{
+			width: 100%;
+			height: 100%;
+			padding: 0 20px;
+			margin-bottom: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		header .table .wf-td{
+			height: 100%;
+			padding: 23px 0;
+		}
+		header .table img{
+			width: 245px;
+			height: 43px;
+		}
+		header .wf-info{
+			padding: 10px 0;
+		}
+		header .wf-info img{
+			width: 70px;
+			height: 70px;
+		}
+		nav{
+			padding: 0 40px;
+		}
+		nav ul li a{
+			display: inline;
+		}
+		nav ul li{
+			padding:0 20px;
+			justify-content: normal;
+		}
+		nav ul li img{
+			display: none;
+		}
+		nav ul li a.val{
+			display: none;
+		}
+		.container{
+			width: 90%;
+			height: 100%;
+			border: 1px solid #bababa;
+			padding: 0 90px;
+			padding-top: 60px;
+		}
+		footer{
+			padding-bottom: 80px;
+		}
+		footer .con{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+footer .contact{
+	width: 35%;
+	height: 100%;
+}
+footer .contact li{
+	height: 25px;
+	font-size: 16px;
+	color: #bababa;
+}
+footer .contact li.log{
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 30px;
+}
+footer .contact .log a{
+	font-size: 25px;
+	color: #bababa;
+}
+footer .contact .log a:hover{
+	text-decoration: none;
+}
+footer .contact li:nth-child(1){
+	color: #333;
+}
+footer .last{
+	width: 65%;
+	height: 100%;
+}
+footer .last input{
+	width: 50%;
+	height:40px;
+	border-bottom: 1px solid #bababa;
+	border-right: 20px solid #fff;
+}
+footer .last textarea:nth-child(5){
+	width: 100%
+}
+footer .tu{
+	margin-bottom: 50px;
+	}
+}
+/* 中屏 */
+@media screen and (min-width: 1200px){
+
+}

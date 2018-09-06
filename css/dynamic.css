@@ -1,0 +1,304 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+html ,body{
+	height: 100%;
+	width: 100%;
+	display: block;
+	background-position: center top;
+	background-repeat:repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.paje{
+	background-image: url('../img/page2-10.jpg');
+	background-position: center top;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+.container{
+	padding: 5% 0;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	background-color: #fff;
+		}
+header{
+	overflow: hidden;
+	height: 0;
+}
+nav{
+	width: 100%;
+	height: 48px;
+	background-color: #000;
+	display: flex;
+	flex-direction: row;
+}
+nav ul{
+	width: 100%;
+}
+nav ul li{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 48px;
+}
+nav ul li a{
+	height: 100%;
+	width: 128px;
+	font-size: 14px;
+	color: rgba(141, 144, 149, 1.0);
+	text-decoration: none;
+	line-height: 48px;
+	text-align: center;
+	display: none;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+nav  a.list{
+	width: 100px;
+	color: #fff;
+}
+nav ul li img{
+	width: 100px;
+	height: 17px;
+	margin-top: 15px;
+}
+nav ul li a.val{
+	font-size: 24px;
+	display: inline;
+}
+main{
+	width: 100%;
+	padding-bottom: 6%;
+}
+main .box{
+	display: block;
+}
+main .box .last{
+	display: block;
+	height: 40px;
+	background: #bababa;	
+}
+main .box .box1{
+	height: 0;
+	display: block;
+	overflow: hidden;
+	transition: all.6s;
+}
+main .box:hover .box1{
+	height: 100%;
+}
+main .box .box1 .box-td{
+	display: block;
+	height: 40px;
+	border: 1px solid #bababa;
+	border-top: 0;
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+}
+main .box .box1 .box-td:hover{
+	text-decoration: none;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+main .box .box1 .box-td i{
+	font-size: 14px;
+	font-style: normal;
+	margin-right: 10px;
+	color: #bababa;
+	line-height: 40px;
+}
+main .box .box1 .box-td p{
+	font-size: 16px;
+	line-height: 40px;
+	color: #bababa;
+}
+main .box .last .left{
+	padding-left: 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+main .box .last .left i{
+	font-size: 22px;
+	font-style: normal;
+	margin-right: 10px;
+	color: #fff;
+	line-height: 40px;
+}
+main .box .last .left p{
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+}
+.con{
+	height: 100%;
+	background-color: #fff;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.con .title{
+	width: 100%;
+	height: 15%;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 3%;
+}
+.con .title i{
+	font-size: 24px;
+	color: #333;
+	font-style: normal;
+}
+.con .title p{
+	font-size: 20px;
+	color: #333;
+}
+.con .title p span{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #bababa;
+	line-height: 40px;
+}
+.con .con-td{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5%;
+}
+.con .con-td .con-dd{
+	width: 100%;
+	height: 100%;
+	margin-left: 30px;
+}
+.con .con-td .con-dd a{
+	width: 70%;
+	display: block;
+	font-size: 18px;
+	color: #333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.con .con-td .con-dd a:hover{
+	text-decoration: none;
+	color: #bababa;
+}
+.con .con-td .con-dd p{
+	font-size: 14px;
+	color: #bababa;
+}
+.con .con-td .log{
+	display: block;
+	width: 160px;
+	height: 100px;
+}
+.con .con-td .log img{
+	width:160px;
+	height: 100px;
+	transition: 0.6s;
+}
+.con .con-td .log img:hover{
+	transform: scale(1.03);
+}
+main .con .jia{
+	width: 100%;
+	height: 100%;
+}
+main .con .jia a{
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+}
+main .con .jia a:hover{
+	text-decoration: none;
+	color: #bababa;
+}
+@media screen and (min-width: 992px){
+		header{
+			width: 100%;
+			height: 90px;
+			padding: 0 40px;
+			z-index: 10;
+		}
+		header .table{
+			width: 100%;
+			height: 100%;
+			padding: 0 20px;
+			margin-bottom: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		header .table .wf-td{
+			height: 100%;
+			padding: 23px 0;
+		}
+		header .table img{
+			width: 245px;
+			height: 43px;
+		}
+		header .wf-info{
+			padding: 10px 0;
+		}
+		header .wf-info img{
+			width: 70px;
+			height: 70px;
+		}
+		nav{
+			padding: 0 40px;
+		}
+		nav ul li a{
+			display: inline;
+		}
+		nav ul li{
+			padding:0 20px;
+			justify-content: normal;
+		}
+		nav ul li img{
+			display: none;
+		}
+		nav ul li a.val{
+			display: none;
+		}
+		.container{
+			width: 90%;
+			height: 100%;
+			border: 1px solid #bababa;
+			padding-right:100px;
+			padding-left: 50px;
+			overflow: hidden;
+		}
+		main .box:hover .box1{
+	height: 180px;
+}
+		.con .con-td .con-dd a{
+	width: 100%;
+	display: block;
+	font-size: 18px;
+	color: #333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+	}
+/* 中屏 */
+@media screen and (min-width: 1200px){
+
+}

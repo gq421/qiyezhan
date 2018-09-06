@@ -1,0 +1,237 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+header{
+	overflow: hidden;
+	height: 0;
+}
+nav{
+	width: 100%;
+	height: 48px;
+	background-color: #000;
+	display: flex;
+	flex-direction: row;
+}
+nav ul{
+	width: 100%;
+}
+nav ul li{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 48px;
+}
+nav ul li a{
+	height: 100%;
+	width: 128px;
+	font-size: 14px;
+	color: rgba(141, 144, 149, 1.0);
+	text-decoration: none;
+	line-height: 48px;
+	text-align: center;
+	display: none;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+nav  a.list{
+	width: 100px;
+	color: #fff;
+}
+nav ul li img{
+	width: 100px;
+	height: 17px;
+	margin-top: 15px;
+}
+nav ul li a.val{
+	font-size: 24px;
+	display: inline;
+}
+.container{
+	width: 96%;
+	height: 100%;
+	margin: 0 auto;
+}
+main{
+	height: 100%;
+	margin-bottom: 50px;
+}
+main .box{
+	margin-bottom: 40px;
+}
+main .box .title{
+	height: 100%;
+	padding-top: 20px;
+	margin-bottom: 40px;
+}
+main .box .title h6{
+	font-size: 16px;
+	color: #333;
+	text-align: left;
+	margin-bottom: 20px;
+}
+main .box .title p{
+	font-size: 14px;
+	color: #bababa;
+}
+main .box .content{
+	height: 100%;
+	font-size: 14px;
+	color: #bababa;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+main .box .foot{
+	display: block;
+	height: 100%;
+}
+main .box .foot li{
+	display: block;
+	height: 100%；
+}
+main .box .foot li a{
+	display: block;
+	font-size: 14px;
+	color: #303030;
+	width: 351px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 10px;
+}
+main .box .foot li a:hover{
+	text-decoration: none;
+	color: #bababa;
+}
+main .ul{
+	height: 100%;
+}
+main ul .last{
+	padding-top: 10px;
+	height: 100%;
+	border-bottom: 1px solid #bababa;
+}
+main ul .last a{
+	display: block;
+	font-size: 16px;
+	color: #333;
+	width: 228px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 5px;
+}
+main ul .last a:hover{
+	text-decoration: none;
+	color: #bababa;
+}
+main ul .last p{
+	font-size: 14px;
+	color: #bababa;
+}
+main .box .xian{
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 30px;
+}
+main .box .xian p{
+	font-size: 14px;
+	color: #333;
+	line-height: 40px;
+}
+main .box .xian a{
+	font-size: 25px;
+	color: #bababa;
+}
+main .box .xian a:hover{
+	text-decoration: none;
+}
+/* 小屏 */
+@media screen and (min-width: 992px){
+	header{
+			width: 100%;
+			height: 90px;
+			padding: 0 40px;
+			z-index: 10;
+		}
+		header .table{
+			width: 100%;
+			height: 100%;
+			padding: 0 20px;
+			margin-bottom: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		header .table .wf-td{
+			height: 100%;
+			padding: 23px 0;
+		}
+		header .table img{
+			width: 245px;
+			height: 43px;
+		}
+		header .wf-info{
+			padding: 10px 0;
+		}
+		header .wf-info img{
+			width: 70px;
+			height: 70px;
+		}
+		nav{
+			padding: 0 40px;
+		}
+		nav ul li a{
+			display: inline;
+		}
+		nav ul li{
+			padding:0 20px;
+			justify-content: normal;
+		}
+		nav ul li img{
+			display: none;
+		}
+		nav ul li a.val{
+			display: none;
+		}
+		main{
+			padding-top: 70px;
+		}
+		main .box .title{
+			padding-top: 0;
+		}
+		main .box .title h6{
+			font-size: 30px;
+		}
+		main .box .title p{
+			font-size: 18px;
+		}
+		main .box .content{
+			margin-bottom: 50px;
+		}
+		main .box .foot{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		main .box .foot li:nth-child(2){
+			width: 100px;
+
+		}
+	}
+/* 中屏 */
+@media screen and (min-width: 1200px){
+
+}

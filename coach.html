@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/coach.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_807630_8lxy3nd5zow.css">
+	<script src="js/animate.js"></script>
+	<script src="js/function.js"></script>
+</head>
+<body>
+	<div class="paje">
+		<header>
+			<div class="table">
+				<div class="wf-td">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="wf-info">
+					<img src="img/er.jpg" alt="">
+				</div>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="home page.html" class="text list">首页</a>
+					<a href="page2.html" class="text">健身课程</a>
+					<a href="dynamic.html" class="text">动态咨讯</a>
+					<a href="about us.html" class="text">关于我们</a>
+					<a href="coach.html" class="text">教练团队</a>
+					<a href="contact.html" class="text">联系我们</a>
+					<a href="" class="iconfont icon-liebiao val"></a>
+					<img src="img/logo1.png" alt="">
+					<a href="" class="iconfont icon-shumogongjuicon- val"></a>
+				</li>	
+			</ul>
+		</nav>
+		<main>
+			<div class="container">
+				<div class="top">
+					<h4>教练团队</h4>
+					<p>TEAM</p>
+				</div>
+				<ul>
+					<li class="col-xs-12 col-sm-4">
+						<a href="" class="ji">
+							<img src="img/coach.jpg" alt="">
+						</a>	
+						<h5>Kevin Kate</h5>
+						<p>健身教练</p>
+						<h6>担任中心健身教练，教练经验丰富</h6>
+					</li>
+					<li class="col-xs-12 col-sm-4">
+						<a href="" class="ji">
+							<img src="img/coach1.jpg" alt="">
+						</a>	
+						<h5>Kevin Kate</h5>
+						<p>健身教练</p>
+						<h6>担任中心健身教练，教练经验丰富</h6>
+					</li>
+					<li class="col-xs-12 col-sm-4">
+						<a href="" class="ji">
+							<img src="img/coach2.jpg" alt="">
+						</a>	
+						<h5>Kevin Kate</h5>
+						<p>健身教练</p>
+						<h6>担任中心健身教练，教练经验丰富</h6>
+					</li>
+					<li class="col-xs-12 col-sm-4">
+						<a href="" class="ji">
+							<img src="img/coach3.jpg" alt="">
+						</a>	
+						<h5>Kevin Kate</h5>
+						<p>健身教练</p>
+						<h6>担任中心健身教练，教练经验丰富</h6>
+					</li>
+					<li class="col-xs-12 col-sm-4">
+						<a href="" class="ji">
+							<img src="img/coach4.jpg" alt="">
+						</a>	
+						<h5>Kevin Kate</h5>
+						<p>健身教练</p>
+						<h6>担任中心健身教练，教练经验丰富</h6>
+					</li>
+				</ul>
+			</div>
+		</main>
+	</div>
+	<div class="gu">
+		<div class="gu-td">
+				<div class="imgs">
+					<img src="img/coach.jpg" alt="">
+					<div class="gu-dd">
+						<h4>Kevin Kate</h4>
+						<h6>健身教练</h6>
+						<p>担任中心健身教练，教练经验丰富</p>
+					</div>
+				</div>
+				<div class="imgs">
+					<img src="img/coach1.jpg" alt="">
+					<div class="gu-dd">
+						<h4>Kevin Kate</h4>
+						<h6>健身教练</h6>
+						<p>担任中心健身教练，教练经验丰富</p>
+					</div>
+				</div>
+				<div class="imgs">
+					<img src="img/coach2.jpg" alt="">
+					<div class="gu-dd">
+						<h4>Kevin Kate</h4>
+						<h6>健身教练</h6>
+						<p>担任中心健身教练，教练经验丰富</p>
+					</div>
+				</div>
+				<div class="imgs">
+					<img src="img/coach3.jpg" alt="">
+					<div class="gu-dd">
+						<h4>Kevin Kate</h4>
+						<h6>健身教练</h6>
+						<p>担任中心健身教练，教练经验丰富</p>
+					</div>
+				</div>
+				<div class="imgs">
+					<img src="img/coach4.jpg" alt="">
+					<div class="gu-dd">
+						<h4>Kevin Kate</h4>
+						<h6>健身教练</h6>
+						<p>担任中心健身教练，教练经验丰富</p>
+					</div>
+				</div>
+			<div class="left">
+				<a class="iconfont icon-jiantou-"></a>
+			</div>
+			<div class="right">
+				<a class="iconfont icon-arrow-right"></a>
+			</div>
+			<div class="dian">
+				<div class="dian-td"></div>
+				<div class="dian-td"></div>
+				<div class="dian-td"></div>
+				<div class="dian-td"></div>
+				<div class="dian-td"></div>
+			</div>
+			<div class="guan">
+				×
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
+<script>
+	let ji=document.querySelectorAll(".ji");
+	let gu=document.querySelectorAll(".gu")[0];
+	let guan=document.querySelectorAll(".guan")[0];
+	console.log(guan);
+	for (let i=0;i<ji.length;i++){
+        //当鼠标移入每个li的操作
+        ji[i].onmousedown=function () {
+           //当前子元素出现
+            gu.style.display="block";
+        }
+        guan.onmousedown=function () {
+            gu.style.display="none";
+        }
+    }
+    let imgs=document.querySelectorAll(".imgs");
+	let dots=document.querySelectorAll(".dian-td");
+	let banner=document.querySelectorAll(".gu-td")[0];
+	let leftBtn=document.querySelectorAll(".right")[0];
+	let rightBtn=document.querySelectorAll(".left")[0];
+	let widths=parseInt(getComputedStyle(imgs[0], null).width);
+	console.log(imgs);
+	 banner_dj(imgs,dots,banner,leftBtn,rightBtn,widths,"active");
+</script>

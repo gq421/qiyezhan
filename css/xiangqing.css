@@ -1,0 +1,176 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+html ,body{
+	width: 100%;
+	display: block;
+	background-position: center top;
+	background-repeat:repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container{
+	padding: 0;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	background-color: #fff;
+		}
+header{
+	overflow: hidden;
+	height: 0;
+}
+nav{
+	width: 100%;
+	height: 48px;
+	background-color: #000;
+	display: flex;
+	flex-direction: row;
+}
+nav ul{
+	width: 100%;
+}
+nav ul li{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 48px;
+}
+nav ul li a{
+	height: 100%;
+	width: 128px;
+	font-size: 14px;
+	color: rgba(141, 144, 149, 1.0);
+	text-decoration: none;
+	line-height: 48px;
+	text-align: center;
+	display: none;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+nav  a.list{
+	width: 100px;
+	color: #fff;
+}
+nav ul li img{
+	width: 100px;
+	height: 17px;
+	margin-top: 15px;
+}
+nav ul li a.val{
+	font-size: 24px;
+	display: inline;
+}
+main{
+	width: 100%;
+	height: 100%;
+}
+main .title{
+	width: 100%;
+	padding-top: 3%;
+}
+main .title h4{
+	font-size: 24px;
+	color: #333;
+	text-align: center;
+}
+main .title p{
+	font-size: 14px;
+	color: #bababa;
+	text-align: center;
+}
+main .contar{
+	width: 100%;
+	height: 100%;
+}
+main .contar .log{
+	height: 100%;
+	margin-bottom: 30px;
+}
+main .contar .log img{
+	width: 100%;
+	height: 100%;
+}
+main .contar .nei{
+	height: 100%;
+	font-size: 14px;
+	color: #bababa;
+}
+@media screen and (min-width: 992px){
+		header{
+			width: 100%;
+			height: 90px;
+			padding: 0 40px;
+			z-index: 10;
+		}
+		header .table{
+			width: 100%;
+			height: 100%;
+			padding: 0 20px;
+			margin-bottom: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		header .table .wf-td{
+			height: 100%;
+			padding: 23px 0;
+		}
+		header .table img{
+			width: 245px;
+			height: 43px;
+		}
+		header .wf-info{
+			padding: 10px 0;
+		}
+		header .wf-info img{
+			width: 70px;
+			height: 70px;
+		}
+		nav{
+			padding: 0 40px;
+		}
+		nav ul li a{
+			display: inline;
+		}
+		nav ul li{
+			padding:0 20px;
+			justify-content: normal;
+		}
+		nav ul li img{
+			display: none;
+		}
+		nav ul li a.val{
+			display: none;
+		}
+		.container{
+			width: 80%;
+			height: 100%;
+			padding-top: 120px;
+		}
+		main{
+			padding-bottom: 50px;
+		}
+		main .title{
+			border-bottom: 1px solid #bababa;
+		}
+		main .contar .nei{
+			padding-left: 38px;
+			padding-right: 20px;
+		}
+	}
+/* 中屏 */
+@media screen and (min-width: 1200px){
+
+}
