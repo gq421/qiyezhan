@@ -83,22 +83,22 @@
 				<span></span>
 			</div>	
 		</div>
-		<div class="box">
+		<div class="box floor">
 			<div class="container">
 				<ul>
 					<li>
-						<img src="img/box3.jpg" alt="">
+						<img imgsrc="img/box3.jpg" alt="" class="img">
 					</li>
 					<li>
-						<img src="img/box.jpg" alt="">
+						<img imgsrc="img/box.jpg" alt="" class="img">
 					</li>
 				</ul>
 				<ul>
 					<li>
-						<img src="img/box1.jpg" alt="">
+						<img imgsrc="img/box1.jpg" alt="" class="img">
 					</li>
 					<li>
-						<img src="img/box2.jpg" alt="">
+						<img imgsrc="img/box2.jpg" alt="" class="img">
 					</li>
 				</ul>
 			</div>	
@@ -273,4 +273,31 @@
             back.style.display="none";
         }
     }
+
+    let wh=window.innerHeight;
+    let floor=document.querySelectorAll(".floor");
+    let arr=[];
+    for (let i=0;i<floor.length;i++){
+        arr.push(floor[i].offsetTop);
+    }
+    console.log(floor);
+    //滚动时
+    window.onscroll=function () {
+        //获取距顶部的距离
+        let dj = document.body.scrollTop || document.documentElement.scrollTop;
+        //值，下标
+        arr.forEach(function (value, index) {
+            // console.log(value,index);
+            if (wh + dj >= value + 150) {
+                //获取当前楼的所有img
+                let imgs = floor[index].querySelectorAll(".img");
+                //element每一张图
+                imgs.forEach(function (element) {
+                    //访问自定义属性getAttribute
+                    element.src = element.getAttribute("imgsrc");
+                })
+            }
+        })
+    }
+
 </script>
